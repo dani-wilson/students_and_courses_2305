@@ -13,9 +13,9 @@ class Gradebook
 
     def list_all_students
         @courses.each do |course|
-            if course 
-        all_students = {course1: [@students], course2: [@students]}
+        all_students = {course => [@students], course => [@students]}
         return all_students
+        end
     end
 
     # def students_below(threshold)

@@ -43,8 +43,8 @@ RSpec.describe Gradebook do
         course1.enroll(student3)
         course2.enroll(student2)
         course2.enroll(student4)
-        #require 'pry';binding.pry
-        expect(gradebook.list_all_students).to eq({course => [course1], course => [course2]})
+        
+        expect(gradebook.list_all_students).to eq({course1 => [student1, student3], course2 => [student2, student4]})
     end
 
     # it 'keeps track of underachievers' do
